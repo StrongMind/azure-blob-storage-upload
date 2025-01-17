@@ -28,7 +28,7 @@ inputs:
     required: true
 runs:
   using: docker
-  image: 'docker://ghcr.io/strongmind/azure-blob-storage-upload:1.0.0 '
+  image: 'docker://ghcr.io/strongmind/azure-blob-storage-upload:1.0.1 '
   args:
     - ${{ inputs.container_name }}
     - ${{ inputs.source_dir }}

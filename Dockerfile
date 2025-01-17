@@ -12,6 +12,7 @@ RUN apt-get update
 RUN apt-get install -y wget tar
 RUN wget https://aka.ms/downloadazcopy-v10-linux -O azcopy.tar.gz
 RUN tar -xvf azcopy.tar.gz --strip-components=1
+RUN mv azcopy /usr/local/bin/
 
 RUN apt-get update && apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release
 
