@@ -1,5 +1,5 @@
-name: "edjufy Azure Blob Storage Upload (fork)"
-author: "Laurenz Glück <l.glueck@edjufy.com>"
+name: "StrongMind Azure Blob Storage Upload (fork)"
+author: "DevOps <devops@strongmind.com>"
 description: "Uploads assets to Azure Blob Storage"
 branding:
   icon: command
@@ -28,7 +28,7 @@ inputs:
     required: true
 runs:
   using: docker
-  image: 'docker://ghcr.io/edjufy/azure-blob-storage-upload:1.3.0'
+  image: 'docker://ghcr.io/strongmind/azure-blob-storage-upload:1.0.0 '
   args:
     - ${{ inputs.container_name }}
     - ${{ inputs.source_dir }}
